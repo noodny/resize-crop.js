@@ -18,6 +18,7 @@ module.exports = function( options, callback ) {
 	// Default config
 	var config = {
 		format: "png",
+		quality: 1,
 		gravity: "center",
 		src: false,
 		dest: false,
@@ -47,6 +48,7 @@ module.exports = function( options, callback ) {
 			srcPath: src,
 			dstPath: dest,
 			format: config.format,
+			quality: config.quality,
 			strip: true
 		};
 
